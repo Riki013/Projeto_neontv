@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    background-color: #000;
+}
+
+a, a:hover {
+    color: inherit;
+}
+
+header {
+    z-index: 10;
+}
+
+section {
+    border-bottom: 8px solid #222;
+}
+
+.logo {
+    max-height: 100px;
+}
+
+@media (max-width: 548px) {
+    .logo {
+        max-height: 60px;
+    }
+}
+
+.btn-login {
+    background-color: #8BFD63;
+    padding: 7px 17px;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #fff;
+    border-radius: 3px;
+}
+
+@media (max-width: 548px) {
+    .btn-login {
+        font-size: 1.3rem;
+        padding: 0.25rem 0.5rem;
+    }
+}
+
+.box-background {    
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    position: fixed;    
+}
+
+.box .content{
+    height: 95vh;
+}
+
+@media (max-width: 548px) {
+    .box .content {
+        height: 66vh;
+    }
+}
+
+@media (max-width: 548px) {
+    .box-background {
+        height: 66vh;
+    }
+}
+
+.box .content h1 {
+    font-size: 3.125rem;
+    text-shadow: 0 0 10px #8BFD63, 0 0 20px #8BFD63, 0 0 40px #8BFD63, 0 0 80px #8BFD63;
+}
+
+.box .content h2 {
+    font-size: 1.625rem ;
+}
+
+.box .content h3, .perguntas .subtitle {
+    font-size: 1.2rem ;
+}
+
+@media (max-width: 548px) {
+    .box .content h3 {
+        padding: 0.7%;
+    }
+    .box .content h1 {
+        font-size: 1.75rem;
+    }
+    .box .content h2 {
+        font-size: 1.125rem;
+    }
+}
+
+.box .box-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.form-control {
+    height: 60px;
+}
+
+@media (max-width: 548px) {
+    .form-control {
+        height: 48px;
+        flex: none;
+    }
+}
+
+.assine_ja .input-group-text {
+    background-color: #8BFD63;
+    border-color: #8BFD63;
+    border-radius: 0;
+    font-size: 1.5rem;
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+.assine_ja {        
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.assine_ja-text {
+    font-size: 2rem;
+    margin-left: 10px; 
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 548px) {
+    .assine_ja .input-group-text {
+        font-size: 1.2rem;
+        min-height: 44px;
+        font-weight: 500;
+        border-radius: 2px;
+    }
+}
+
+section .title {
+    font-size: 3.125rem;
+    text-shadow: 0 0 10px #8BFD63, 0 0 20px #8BFD63, 0 0 40px #8BFD63, 0 0 80px #8BFD63;
+}
+
+section .subtitle {
+    font-size: 1.625rem;
+}
+
+@media (max-width: 548px) {
+    section .title {
+        font-size: 1.625rem;
+        text-align: center;
+        margin-top: -4rem;
+    }
+    section .subtitle {
+        font-size: 1.125rem;
+        text-align: center;
+        padding: 0.2%;
+        margin-top: 1rem;
+    }
+    section .video-tv img{
+        margin-top: 0.5rem;
+    }
+    section .video-tv {
+        margin-top: 0.5rem;
+    }
+}
+
+.video-tv img, .video-desktop img {
+    position: relative;
+    z-index: 1;
+}
+
+.video-tv video {
+    position: absolute;
+    left: 13.5%;
+    top: 21%;
+    max-width: 72.5%;
+    
+}
+
+.video-desktop video {
+    position: absolute;
+    left: 18%;
+    max-width: 64%;
+    top: 9.5%;
+    
+}
+
+section {
+    border-bottom: 8px solid #222;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+@media (max-width: 548px) {    
+    section {
+        padding-top: none;
+    }
+
+    .container {
+        margin-top: 60px;
+    }
+}
+
+@media (min-width: 950px) {
+    .mobile {
+        left: -15%;
+    }
+}  
+
+.mobile-card {
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    background: black;
+    width: 60%;
+    min-width: 15em;
+    padding: 0.25em 0.65em;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 2em 0 #000000;
+    border-radius: 0.75em;
+}
+
+.mobile-card .card-image img {
+    height: 4.5em;
+}
+
+.mobile-card h5 {
+    font-size: 1rem;
+}
+
+.mobile-card label {
+    font-size: 0.9em;
+    color: #0071eb;
+}
+
+.mobile-card .gift img {
+    width: 3em;
+}
+
+.perguntas .accordion button {
+    background: #303030;
+    padding: 1.1rem 2.2rem 1.1rem 1.2rem;
+    width: 100%;
+    border: 0;
+    text-align: left;
+    position: relative;
+    color: #fff;
+    outline: none;
+    font-size: 1.625rem;    
+    margin-bottom: 2px;
+    box-shadow: 0 0 6px #8BFD63;
+}
+
+.perguntas .accordion button span {
+    position: absolute;
+    right: 20px;
+    font-size: 4rem;
+    line-height: 1.1;
+    top: 0;
+}
+
+.perguntas .accordion button[aria-expanded="true"] span {
+    transform: rotate(135deg);
+}
+
+.perguntas .accordion .card-body {
+    background: #303030;
+    font-size: 1.625rem;
+    color: #fff;
+    white-space: pre-line;
+    margin-top: 2px;
+}
+
+.perguntas .accordion button:first-child {
+    margin-top: 10px;
+}
+
+.perguntas .text-center.font-weight-bold {
+    text-shadow: 0 0 10px #8BFD63, 0 0 20px #8BFD63, 0 0 40px #8BFD63, 0 0 80px #8BFD63;
+}
+
+@media (max-width: 548px) {
+    .perguntas {
+        padding: 0;
+    }
+    .perguntas .accordion button {
+        font-size: 1.125rem;
+        padding: 0.8rem 2.2rem 0.8rem 1.2rem;        
+    }
+    .perguntas .accordion button span {
+        font-size: 2.5rem;
+        line-height: 1.3;
+    }
+    .form-group {
+        margin-bottom: 8px;
+    }
+    .perguntas .accordion .card-body {
+        font-size: 1.1rem;
+    }
+}
+
+footer, footer a {
+    color: #a6a6a6;
+}
+
+footer a {
+    font-size: 13px;
+}
+
+footer select {
+    background-color: #000000;
+    background-image: none;
+    border: 1px solid #333333;
+    color: #999;
+    font-size: 16px;
+    padding: 12px 26px 12px 50px;
+    line-height: 1.7;
+}
+
+footer .select-globe img {
+    position: absolute;
+    top: 17px;
+    left: 15px;
+    width: 16px;
+    background-color: #999;
+    border-radius: 40px;    
+}
+
+@media (max-width: 548px) {
+    .perguntas .text-center.font-weight-bold {
+        font-size: 1.5rem; 
+    }
+}
