@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/Projeto_neontv/image/logo.png" type="image/favicon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Projeto_neontv/style/style2.css" /> 
+    <title>Login NeonTV</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="#">
+                <img src="/Projeto_neontv/image/logo.png" alt="" class="neon-logo">
+            </a>
+        </div>
+    </div>
+
+    <div class="login_body">
+        <div class="login_box">
+            <h2>Login</h2>
+            <form>
+                <div class="input_box">
+                    <input type="email" id="email" placeholder="Email ou número de telefone">
+                </div>
+
+                <div class="input_box">
+                    <input required type="password" id="senha" placeholder="Senha">
+                </div>
+
+                <div>
+                    <button class="submit" id="entrarButton">
+                        Entrar
+                    </button>
+                </div>
+            </form>
+
+            <div class="support">
+                <div class="remember">
+                    <span><input type="checkbox" style="margin: 0;padding: 0; height: 13px;"></span>
+                    <span>Lembre-se de min</span>
+                </div>
+                <div class="help">
+                    <a href="#">
+                        Precisa de ajuda?
+                    </a>
+                </div>
+            </div>
+            <div class="login_footer">
+                <div class="login_facebook">
+                    <span><img height="20px" src="/Projeto_neontv/image/facebook.png" alt="facebook"></span>
+                    <span><a href="#">Conectar com Facebook</a></span>
+                </div>
+
+                <div class="sign_up">
+                    <p>Novo por aqui? <a href="#">Assine já.</a></p>
+                </div>
+
+                <div class="terms">
+                    <p>Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <a href="#">Saiba mais</a></p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>  
+    <script>
+        
+        document.getElementById("entrarButton").addEventListener("click", function () {
+            var email = document.getElementById("email").value;
+            var senha = document.getElementById("senha").value;
+
+            
+            if (email === "" && senha === "") {
+                window.location.href = "/Projeto_neontv/html/index_categoria.html"; 
+            } else {
+                alert("Credenciais inválidas. Use 'teste' para o email e senha.");
+            }
+        });
+    </script>  
+</body>
+</html>
